@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class exe4 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Digite o primeiro numero: ");
+        Double num1 = sc.nextDouble();
+
+        System.out.print("Digite o segundo numero: ");
+        Double num2 = sc.nextDouble();
+
+        if (num1 > num2) {
+            System.out.println("Ordem decrescente dos numeros: " + num1 + "," + num2 );
+        }else{
+            System.out.println("Ordem decrescente dos numeros: " +num2+ "," +num1);
+        }
+        sc.close();
+    }
+}
