@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class exe2 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Digite sua idade: ");
+        int idade = sc.nextInt();
+        if (idade > 18) {
+            System.out.println("Parabens voce e maior de idade !!");
+        }else if (idade < 18) {
+            System.out.println("Voce ainda e menor de idade !!");
+        }
+        sc.close();
+    }
+}
