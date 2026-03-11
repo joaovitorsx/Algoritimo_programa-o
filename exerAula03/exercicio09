@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class exe9 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        double salariobt, prestacao, limite;
+        System.out.print("Digite seu salario bruto: ");
+        salariobt = sc.nextDouble();
+
+        System.out.print("Digite o valor da prestação: ");
+        prestacao = sc.nextDouble();
+
+        limite = salariobt * 0.30;
+        if (prestacao <= limite) {
+            System.out.println("Emprestimo pode ser concedido");
+        }else{
+            System.out.println("Emprestimo nao pode ser concedido");
+        }
+        sc.close();
+    }
+}
