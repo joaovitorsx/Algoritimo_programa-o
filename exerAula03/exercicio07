@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class exe7 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        double salario, bonus;
+        int anos;
+        System.out.print("Por favor digite o valor do seu salario: ");
+        salario = sc.nextDouble();
+
+        System.out.print("Por favor digite quantos anos voce trabalha na empresa: ");
+        anos = sc.nextInt();
+
+        if (anos >= 5 ) {
+            bonus = salario * 0.20;
+        }else{
+            bonus = salario * 0.10;
+        }
+        System.out.printf("Parabens voce recebeu um bonus de: %.2f\n ", bonus);
+        sc.close();
+    }
+    
+}
