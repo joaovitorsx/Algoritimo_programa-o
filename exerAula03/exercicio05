@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class exe5 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Digite um numero inteiro para saber se ele esta no intervalo entre 50 e 100: ");
+        int num = sc.nextInt();
+        if (num >= 50 && num <= 100) {
+            System.out.println("O numero " + num+ "esta no intervalo entre os numeros");
+        }else{
+            System.out.println("O numero " + num+ "nao esta no intervalo entre os numeros");
+        }
+        sc.close();
+    }
+}
